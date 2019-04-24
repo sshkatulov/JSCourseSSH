@@ -1,0 +1,24 @@
+{
+  "name": "jscoursessh",
+  "version": "1.0.0",
+  "description": "project for mocha tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshkatulov/JSCourseSSH.git"
+  },
+  "author": "sshkatulov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshkatulov/JSCourseSSH/issues"
+  },
+  "homepage": "https://github.com/sshkatulov/JSCourseSSH#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "moment": "^2.24.0"
+  }
+}
