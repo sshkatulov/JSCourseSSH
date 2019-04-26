@@ -4,7 +4,7 @@ const logWithTag = (tag, text) => {
 
 class Log{
     info(text){
-        logWithTag('INFO', text);
+        logWithTag('INFO===', text);
     }
 
     warning(text){
@@ -12,7 +12,7 @@ class Log{
     }
 
     error(text){
-        logWithTag('ERROR', text);
+        logWithTag('ERROR==', text);
     }
 }
 
