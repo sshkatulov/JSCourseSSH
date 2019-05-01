@@ -11,12 +11,12 @@ describe('Hello World TestSuite', () => {
 
 describe('DateTime TestSuite', () => {
     it('today() should return valid date', () => {
-        assert.equal(dateTime.today(), Date.now())
+        assert.equal(dateTime.today(), Date.now());
     });
     it('setYear() should return valid date', () => {
-        assert.equal(dateTime.setYear(new Date("2019-04-22"), 2007), new Date("2007-04-22").getTime())
+        assert.equal(dateTime.setYear(new Date("2019-04-22"), 2007), new Date("2007-04-22").getTime());
     });
     it('daysDifference() should return valid amount of days', () => {
-        assert.equal(dateTime.daysDifference(new Date("2019-04-22"), new Date("2007-04-10")), 12)
+        assert.equal(dateTime.daysDifference(new Date("2019-04-22"), new Date("2007-04-10")), 12);
     });
 });
