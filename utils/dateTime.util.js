@@ -1,6 +1,9 @@
+const moment = require('moment');
+const YYYY_MM_DD = 'YYYY-MM-DD';
+
 class DateTimeUtil {
     today(){
-        return Date.now();
+        return moment().format(YYYY_MM_DD);
     }
 
     setYear(date, year){
@@ -9,6 +12,10 @@ class DateTimeUtil {
 
     daysDifference(dateLeft, dateRight){
         return dateLeft.getFullYear() - dateRight.getFullYear();
+    }
+
+    todayMinus10(){
+        return moment().add(-10, 'days').format(YYYY_MM_DD);
     }
 }
 

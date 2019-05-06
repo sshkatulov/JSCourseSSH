@@ -2,6 +2,7 @@ const { describe, it } = require('mocha');
 const { assert } = require('chai');
 const logger = require('../utils/log.util');
 const dateTime = require('../utils/dateTime.util');
+const moment = require('moment');
 
 describe('Hello World TestSuite', () => {
     it('should write "Hello World"', () => {
@@ -11,7 +12,7 @@ describe('Hello World TestSuite', () => {
 
 describe('DateTime TestSuite', () => {
     it('today() should return valid date', () => {
-        assert.equal(dateTime.today(), Date.now());
+        assert.equal(dateTime.today(), moment().format('YYYY-MM-DD'));
     });
     it('setYear() should return valid date', () => {
         assert.equal(dateTime.setYear(new Date("2019-04-22"), 2007), new Date("2007-04-22").getTime());
